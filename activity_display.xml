@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarSize="2dp"
+        android:scrollbarStyle="insideOverlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/place_card"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:forceHasOverlappingRendering="true"
+            app:barrierAllowsGoneWidgets="true"
+            app:barrierMargin="8dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            app:cardMaxElevation="8dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/gallerybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="@color/black"
+                android:shadowColor="@color/textcolor"
+                android:soundEffectsEnabled="true"
+                android:text="Virtual Tour"
+                app:cornerRadius="10dp"
+                app:elevation="10dp"
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/houseimage"
+                android:layout_width="370dp"
+                android:layout_height="438dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img1" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/housename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+         android:text="FarmHouse Bandra"/>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/ic_outline_bedroom_parent_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/noofbed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-38dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="-10dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="4"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/ic_baseline_bathtub_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/noofbath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-29dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="4"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/star"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="30dp"
+
+                android:src="@drawable/ic_baseline_star_rate_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ratingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-29dp"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"
+                android:text="2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/description"
+            android:layout_width="328dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="The farmhouse is located in bandra. Its close to all the tourist spots and workplacesand is perfect for a family to stay who are attracted towards a luxurious life."
+            android:textColor="@color/textcolor"
+            android:textSize="16dp" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_people_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:text="People Allowed"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/peopleallowedtext"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:text=" Couples"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_verified_user_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/livingpreftext"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_trending_flat_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:text=" Flat"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_price_change_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:text="Price Range"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pricerangetext"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:text="Between 5000 to 10000"
+            android:textColor="@color/textcolor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="245dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/statictext"
+            android:layout_width="328dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:text="For more details or scheduling a visit contact the owner -"
+            android:textColor="@color/textcolor"
+            android:textSize="16dp"
+            tools:ignore="MissingClass" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/owner"
+            android:layout_width="368dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:fitsSystemWindows="true"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BookBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+          android:layout_margin="20dp"
+            android:backgroundTint="@color/black"
+            android:padding="10dp"
+            android:shadowColor="@color/textcolor"
+            android:text="Schedule a visit"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
